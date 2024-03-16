@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 @media (min-width: 768px) {
@@ -18,5 +18,40 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    
+}
+
+.text-service {
+    font-size: 25px;
+    margin: 10px;
+    
+}
+
+.navbar-brand {
+    font-size: 50px;
+    color: black;
+    font-weight: bolder;
+}
+
+.color-i {
+    color: aqua;
+}
+
+.opportunities {
+    font-weight: bold;
+}
+
+.text-center {
+    background-color: lightgray;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1em solid lightgray;
+}
+
+.container-footer {
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    text-align: center
 }
