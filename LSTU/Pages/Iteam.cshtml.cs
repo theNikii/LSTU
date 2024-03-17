@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LSTU.Pages
 {
@@ -12,8 +13,12 @@ namespace LSTU.Pages
             _logger = logger;
         }
 
+        public string? SearchString { get; set; }
+
         public void OnGet()
         {
+           
+
         }
     }
 

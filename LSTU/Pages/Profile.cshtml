@@ -3,6 +3,26 @@
 @{
     ViewData["Title"] = "Профиль";
 }
+
 <h1>Личный кабинет</h1>
 
-<p>Авторизация через -   </p>
+<form>
+    <p>
+       <p> Фамилия</p> 
+       <input type="text" asp-for="SearchString" />
+    </p>
+
+    <p>
+        <p> Имя </p>
+         <input type="text" asp-for="SearchString" />
+    </p>
+     <p> Роль </p>
+           <input type="text" asp-for="SearchString" />
+           <p>
+        Заполнить форму для получения роли "преподаватель"
+    <input type="submit" value=" Заполнить" />
+    </p>
+    </p>
+    <input type="submit" value=" авторизация через вк" />
+</form>
+

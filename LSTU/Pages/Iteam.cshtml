@@ -63,6 +63,29 @@
 
 <div class="iteams-all">
     <h1>Доступные курсы </h1>
+
+    <form>
+        <p>
+            Введите название курса: <input type="text" asp-for="SearchString" />
+            <input type="submit" value="Поиск" />
+        </p>
+    </form>
+
+    <span class="list-item">
+        <p>
+            <ul>
+                <li class ="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Информатика</a></li>
+                <li class="list-item-un"> <a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Химия</a></li>
+                <li class="list-item-un">  <a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Физика</a></li>
+                <li class="list-item-un">  <a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">История</a></li>
+                <li class="list-item-un">  <a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Математический анализ</a></li>
+                <li class="list-item-un">  <a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Программирование</a></li>
+                <li class="list-item-un">  <a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Английский язык</a></li>
+                <li class="list-item-un">  <a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Немецкий язык</a></li>
+            </ul>
+        </p>
+    </span>
+
 </div>
 
 
