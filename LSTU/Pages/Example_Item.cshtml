@@ -1,14 +1,40 @@
 ﻿@page
 @model Exanple_ItemModel
 @{
-    ViewData["Title"] = "Предмет";
+    ViewData["Title"] = "Информатика";
 }
 
-<div class="iteams-popular">
-    <h1>Предмет </h1>
+<div class="iteam-info">
+  
+    <h1>Информатика </h1>
+    <p>Наука о методах и процессах сбора, хранения, обработки, передачи, анализа и оценки информации с применением компьютерных технологий.</p>
+   
+   <div class="iteam-material">
+       <h2>Материалы по дисциплине  "@ViewData["Title"]" </h2>
+        <div class="material">
+            <ul>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Лекция 1</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Лекция 2</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Лекция 3</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Лекция 4</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Лекция 5</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Тест 1</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Тест 2</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Тест 3</a></li>
+                <li class="list-item-un"><a class="nav-link text-dark" asp-area="" asp-page="/Example_Item">Тест 4</a></li>
+            </ul>
+        </div>
+   
+   </div>
 
-   
-   
+    <div class="iteam-chat">
+        <h2>Чат по дисциплине  "@ViewData["Title"]" </h2>
+        <p> Введите сообщение </p>
+        <input type="text" asp-for="SearchString" />       
+            <input type="submit" value=" Отправить" />
+      
+
+    </div>
 </div>
 
 
