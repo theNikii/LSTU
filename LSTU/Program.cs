@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using LSTU.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<LSTUContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("LSTUContext") ?? throw new InvalidOperationException("Connection string 'LSTUContext' not found.")));
 
 var app = builder.Build();
 
